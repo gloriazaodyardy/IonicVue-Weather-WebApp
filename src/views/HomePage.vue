@@ -15,15 +15,19 @@
 
       <div id="container">
         <div>
-          <strong>Welcome to the Weather Application!</strong>
+          <h1>Welcome to the Weather Application!</h1>
           <p>
             This application provides you with the latest weather updates.
             Scroll to load more.
           </p>
+          <!-- Search component -->
+          <div>
+            <SearchList @search-query="handleSearch"/>
+          </div>
         </div>
-        <!-- Display list -->
+        <!-- List component -->
         <div>
-          <List />
+          <List :filterQuery="searchData"/>
         </div>
       </div>
     </ion-content>
@@ -38,24 +42,26 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
+import { ref } from "vue";
 import List from "@/components/List.vue";
+import SearchList from "@/components/SearchList.vue";
+
+const searchData = ref("");
+
+const handleSearch = (query:string) =>{
+  // save search query to searchQuery variable
+  searchData.value = query;
+}
 </script>
 
 <style scoped>
 #container {
   margin-top: 28dvh;
   text-align: center;
-  padding-inline: 4rem;
+  padding-inline: clamp(1rem, 4.286vw + 0.143rem, 4rem);
 
   div {
-    margin-top: 6rem;
-    strong {
-      font-size: 2rem;
-    }
-    p {
-      color: #8c8c8c;
-      font-size: 1.2rem;
-    }
+    margin-top: 4rem;
   }
 }
 </style>
