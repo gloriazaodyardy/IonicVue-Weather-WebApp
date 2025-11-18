@@ -3,7 +3,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineEmits } from "vue";
 import { IonSearchbar } from "@ionic/vue";
 
 // Declare event: 'searchQuery'

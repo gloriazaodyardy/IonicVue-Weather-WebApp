@@ -21,7 +21,7 @@ import {
   IonInfiniteScrollContent,
   InfiniteScrollCustomEvent,
 } from "@ionic/vue";
-import { ref, onMounted, defineProps, watch, computed } from "vue";
+import { ref, onMounted, watch, computed } from "vue";
 
 // Define weather data structure
 interface weatherItem {
