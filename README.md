@@ -8,7 +8,7 @@ A cross-platform application using Vue and Ionic to provide latest weather data 
 
 
 ## Screenshots
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/gloriazaodyardy/IonicVue-Weather-WebApp/blob/main/public/Desktop%20preview.png))
+![App Screenshot](https://github.com/gloriazaodyardy/IonicVue-Weather-WebApp/blob/main/public/Desktop%20preview.png)
 
 
 ## Run Locally
